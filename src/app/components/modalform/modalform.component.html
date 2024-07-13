@@ -1,0 +1,27 @@
+<section class="wrapper--modalform--section" *ngIf="isVisible" (click)="closeModal()">
+  <div class="wrapper--modalform container" (click)="$event.stopPropagation()">
+    <div class="modalform--info" *ngIf="!isThankYouVisible">
+      <span class="close-icon" (click)="closeModal()">×</span>
+      <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+        <div class="form-group">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Full name" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Email" ngModel required email>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" class="form-control" placeholder="+432 344 343 444" ngModel required>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Отправить</button>
+      </form>
+    </div>
+    <div class="thank-you-message" *ngIf="isThankYouVisible">
+      <img src="assets/img/arrow.png" alt="arrow-done">
+      <p>Thank you for submitting your application!</p>
+      <button class="btn btn-primary" (click)="closeModal()">Close</button>
+    </div>
+  </div>
+</section>

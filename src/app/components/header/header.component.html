@@ -1,0 +1,25 @@
+<div class="wrapper--header">
+  <header>
+    <div class="header--main container">
+      <div class="header--logo" routerLink="">
+        LOGO
+      </div>
+      <div class="burger-menu" (click)="toggleMenu()" [class.open]="menuOpen">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="header--nav" [class.open]="menuOpen">
+        <nav>
+          <ul>
+            <li routerLink="/blog">Blog</li>
+            <li routerLink="/kontakt">Kontakt</li>
+            <li routerLink="/Onas">O nas</li>
+            <li routerLink="/treningi">Treningi</li>
+            <app-button-open-modal></app-button-open-modal>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+</div>

@@ -1,0 +1,555 @@
+.wrapper--home {
+  .wrapper--info {
+    background-image: url("/assets/img/guyBox.png") , url("/assets/img/ligth.png");
+    background-size: 1366px 910px , 1366px 910px ;
+    background-position: 370px;
+    background-repeat: no-repeat no-repeat;
+    margin-bottom: 165px;
+    padding: 0 15px;
+  }
+
+  .header--info {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 470px;
+    flex-grow: 1;
+    margin-bottom: 191px;
+
+    .header--text {
+      min-height: 300px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .header--text--title{
+        max-width: 1005px;
+        height: auto;
+        color: rgb(255, 255, 255);
+        font-family: Hind;
+        font-size: 80px;
+        font-weight: 500;
+        line-height: 80px;
+      }
+
+      .header--text-subtitle {
+        max-width: 936px;
+        height: auto;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25.6px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+    }
+
+    .header--action {
+      min-height: 120px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .header--action button {
+        /* Rectangle 2 */
+        position: absolute;
+        width: 331px;
+        height: 64px;
+        left: 92px;
+        top: 650px;
+
+
+      }
+
+      .header--action--title {
+        color: rgba(255, 255, 255, 0.8);
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25.6px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+    }
+  }
+
+  .info--contact {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1412px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 15px;
+    padding-bottom: 95px;
+
+    .info--contact--item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 19px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper--info {
+    background-image: url("/assets/img/guyBox.png") , url("/assets/img/ligth.png") !important;
+    background-size: 868px 500px , 600px 400px !important;
+    background-position: 10px 95px !important;
+    background-repeat: no-repeat no-repeat !important;
+    margin-bottom: 165px !important;
+    padding: 0 15px !important;
+  }
+
+  .header--info {
+    margin-bottom: 100px !important;
+    min-height: 500px !important;
+
+    .header--text {
+      .header--text--title {
+        font-size: 64px !important;
+        line-height: 50px !important;
+      }
+
+      .header--text-subtitle {
+        font-size: 20px !important;
+        line-height: 22px !important;
+      }
+    }
+
+    .header--action {
+      min-height: auto;
+      .header--action--title {
+        font-size: 16px !important;
+        line-height: 22px !important;
+      }
+    }
+  }
+
+  .info--contact {
+
+    align-items: flex-start;
+    gap: 10px !important;
+    .info--contact--item {
+      gap: 10px !important;
+    }
+  }
+}
+
+@media (max-width: 715px) {
+  .info--contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+
+    .info--contact--item {
+      width: 300px;
+      display: flex;
+      justify-content: flex-start !important;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper--info {
+    background-image: none !important;
+
+  }
+
+  .header--info {
+    margin-bottom: 50px !important;
+    justify-content: space-evenly !important;
+    .header--text {
+      justify-content: space-evenly !important;
+      .header--text--title {
+        font-size: 30px !important;
+        line-height: 40px !important;
+      }
+
+      .header--text-subtitle {
+        font-size: 14px !important;
+        line-height: 20px !important;
+      }
+    }
+
+    .header--action {
+      .header--action--title {
+        text-align: center !important;
+        font-size: 14px !important;
+        line-height: 20px !important;
+      }
+    }
+  }
+
+  .info--contact {
+    font-size: 16px !important;
+    line-height: 22px !important ;
+  }
+}
+
+@media (max-width: 320px) {
+  .header--info {
+    margin-bottom: 20px !important;
+
+    .header--text {
+      .header--text--title {
+        font-size: 24px !important;
+        line-height: 32px !important;
+      }
+
+      .header--text-subtitle {
+        font-size: 12px !important;
+        line-height: 18px !important;
+      }
+    }
+
+    .header--action {
+      .header--action--title {
+        font-size: 12px !important;
+        line-height: 18px !important;
+      }
+    }
+  }
+
+  .info--contact {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.wrapper--workout-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/img/woman.png");
+  background-size: 1050px 856px;
+  background-position: 735px 0px; /* Center the background image */
+  background-repeat: no-repeat;
+  margin-bottom: 183px;
+  .workout-plan--title {
+    color: rgb(255, 255, 255);
+    font-family: Hind;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 62px;
+    text-align: center;
+  }
+
+  .workout-plan--info--main {
+    min-height: 610px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .workout-plan-info--child {
+      display: flex;
+      justify-content: space-between;
+      min-height: 211px;
+      display: flex;
+
+      max-width: 740px;
+      .workout-plan-info--img {
+
+        min-width: 185px;
+        background-image: url("/assets/img/blur.png");
+        background-size: 160px 160px;
+        background-position: -22px -5px;
+        background-repeat: no-repeat;
+      }
+      .workout-plan-info--img img {
+        width: 50px;
+        height: 50px;
+        margin: 48px 0 0 34px;
+      }
+      .workout-plan--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        max-width: 555px;
+        .workout-plan--text--title {
+          color: rgb(255, 255, 255);
+          font-family: Hind;
+          font-size: 40px;
+          font-weight: 700;
+
+        }
+
+        .workout-plan--text--subtitle {
+          color: rgba(255, 255, 255, 0.8);
+          font-family: Montserrat;
+          font-size: 24px;
+          font-weight: 500;
+
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .wrapper--workout-plan {
+    background-image: url("/assets/img/woman.png");
+    background-size: 1050px 856px;
+    background-position: -250px 800px; /* Center the background image */
+    background-repeat: no-repeat;
+
+    .workout-plan-info--child:not(:last-child) {
+      margin-bottom: 189px !important;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .workout-plan-info--child {
+   margin-bottom: 65px;
+  }
+
+  .workout-plan-info--img {
+    display: none;
+  }
+
+  .workout-plan--text {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 0 10px;
+
+  }
+
+  .workout-plan--text--subtitle {
+    padding-left: 5px;
+  }
+}
+
+.wrapper--workout-video {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 196px;
+
+  .workout-video--text {
+    text-align: center;
+
+    &--title {
+      color: rgb(255, 255, 255);
+      font-family: Hind;
+      font-size: 32px;
+      font-weight: 500;
+    }
+
+    &--subtitle {
+      color: rgb(255, 255, 255);
+      font-family: Hind;
+      font-size: 48px;
+      font-weight: 500;
+    }
+  }
+
+  .workout-video-block {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 20px auto;
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .workout-video--text {
+      &--title {
+        font-size: 24px;
+      }
+
+      &--subtitle {
+        font-size: 32px;
+      }
+    }
+
+    .workout-video-block {
+      padding-top: 75%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .workout-video--text {
+      &--title {
+        font-size: 20px;
+      }
+
+      &--subtitle {
+        font-size: 28px;
+      }
+    }
+
+    .workout-video-block {
+      padding-top: 133.33%;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .workout-video--text {
+      &--title {
+        font-size: 18px;
+      }
+
+      &--subtitle {
+        font-size: 24px;
+      }
+    }
+
+    .workout-video-block {
+      padding-top: 177.78%;
+    }
+  }
+}
+
+
+
+.wrapper--workout-plan--2--section {
+  background-image: url("/assets/img/man2.png");
+  background-size: 960px 1013px;
+  background-position:0px 100px;
+  background-repeat: no-repeat no-repeat;
+  min-height: 1120px;
+
+  .wrapper--workout-plan--2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-size: 1050px 856px;
+    background-position: 735px 0px;
+    background-repeat: no-repeat;
+    margin-bottom: 117px;
+    .workout-plan--title {
+      color: rgb(255, 255, 255);
+      font-family: Hind;
+      font-size: 48px;
+      font-weight: 500;
+      margin-bottom: 62px;
+      text-align: center;
+    }
+
+    .workout-plan--info--main--2 {
+      min-height: 610px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 61px;
+
+      .workout-plan-info--child--2 {
+        display: flex;
+        justify-content: space-between;
+        min-height: 211px;
+        display: flex;
+
+        max-width: 740px;
+        .workout-plan-info--img--2 {
+
+          min-width: 185px;
+          background-image: url("/assets/img/blur.png");
+          background-size: 160px 160px;
+          background-position: -22px -5px;
+          background-repeat: no-repeat;
+        }
+        .workout-plan-info--img--2 img {
+          width: 50px;
+          height: 50px;
+          margin: 48px 0 0 34px;
+        }
+        .workout-plan--text--2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          max-width: 555px;
+          .workout-plan--text--title--2 {
+            color: rgb(255, 255, 255);
+            font-family: Hind;
+            font-size: 40px;
+            font-weight: 700;
+
+          }
+
+          .workout-plan--text--subtitle--2 {
+            color: rgba(255, 255, 255, 0.8);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 500;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper--workout-plan--2--section {
+    background-size: 1000px 1413px;
+    background-position: 0px 100px;
+    background-repeat: no-repeat no-repeat;
+    min-height: 1120px;
+  }
+
+}
+
+
+@media (max-width: 374px) {
+  .workout-plan-info--child--2 {
+    justify-content: center;
+    align-items: center;
+    display: flex !important;
+    width: 320px !important;
+    margin-bottom: 22px;
+  }
+
+  .workout-plan-info--img--2 {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .workout-plan--text--2 {
+    padding: 0px 10px ;
+  }
+
+  .workout-plan--text--subtitle--2 {
+    padding-left: 5px;
+  }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
